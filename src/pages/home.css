@@ -1,0 +1,6 @@
+.home-container {
+    display:grid;
+    padding: 32px 96px;
+    min-height: 100vh;
+    height: auto;
+}
