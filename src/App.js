@@ -6,7 +6,7 @@ import Header from './components/header/header'
 function App() {
   return (
     <div className="app">
-      <Header title = 'David Kim' navigation = {['Work','About']}></Header>
+      <Header title = 'daviddkim.' navigation = {['Work','About']}></Header>
         <Switch>
           <Route path="/" component= {Home} exact />
           <Route path="/about" render = { () => (<div>about</div>)} />

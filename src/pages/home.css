@@ -1,6 +1,59 @@
 .home-container {
     display:grid;
-    padding: 32px 96px;
-    min-height: 100vh;
+    
     height: auto;
+    grid-template-rows: 90vh Auto;
+}
+
+.intro-container {
+    
+    display: grid;
+    padding: 0px 136px;
+    grid-template-columns: 50% 50%;
+    
+}
+.intro-block{
+    color:white;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+}
+
+.intro-hero {
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.intro-body {
+    font-size: 24px;
+    font-family:  'Roboto';
+    font-weight: 400;
+}
+
+.canvas-block {
+    flex-grow: 1;
+}
+
+.project-container {
+    
+    padding:48px 180px;
+    display:grid;
+    grid-template-rows: 40px Auto; 
+    background-color: white;
+   
+}
+
+
+.card-container {
+    display:grid;
+    margin-top: 32px;
+    grid-template-rows: 50% 50%;
+}
+
+
+.section-title { 
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    border-bottom: 1px solid white;
 }
