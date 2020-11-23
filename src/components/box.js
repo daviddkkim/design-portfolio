@@ -2,7 +2,6 @@ import React, { useRef, useState } from 'react'
 import { useFrame, useLoader } from 'react-three-fiber'
 import * as THREE from 'three'
 import image from '../assets/david.jpg'
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 
 
 function Box(props) {
@@ -14,11 +13,9 @@ function Box(props) {
     const [active, setActive] = useState(false)
     // Rotate mesh every frame, this is outside of React without overhead
     useFrame(() => {
-      mesh.current.rotation.x = mesh.current.rotation.y += 0.01;
+      mesh.current.rotation.x = mesh.current.rotation.y += 0.007;
     })
 
-    var cubeMaterialArray= [];
-    //cubeMaterialArray.push( new THREE.MeshBasicMaterial( {map: texture}));
 
     return (
       <mesh
