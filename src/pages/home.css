@@ -1,6 +1,6 @@
 .home-container {
     display:grid;
-    
+    min-height:90vh;
     height: auto;
     grid-template-rows: 90vh Auto;
 }
@@ -56,4 +56,9 @@
     font-weight: bold;
     color: black;
     border-bottom: 1px solid white;
+}
+
+.link {
+    font-size: 16px;
+    text-decoration: underline;
 }

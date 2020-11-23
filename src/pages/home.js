@@ -4,6 +4,9 @@ import { Canvas } from "react-three-fiber"
 import Box from '../components/box'
 import Card from '../components/card/card'
 import { ReactComponent as DeephireIcon } from '../assets/deephire.svg'
+import {
+    Link
+  } from "react-router-dom"
 
 function Home() {
 
@@ -12,18 +15,17 @@ function Home() {
             <div className='intro-container'>
                 <div className="intro-block">
                     
-                    <span className='intro-hero'>Hey,
-                    <br></br> 
-                    I'm David:</span>
+                    <span className='intro-hero'>Hey, I'm David:</span>
                     {/* <p className='intro-body'>During the day, I am a product manager building Eno,<br></br> a conversational AI platform at Capital One. <br></br>
                     At night, I'm a first-year Human-Centered Design graduate student at University of Washington.<br></br>
                     Previously, I was a senior software engineer at Capital One. </p> */}
                     <p className='intro-body'>
                     A first-year <b>Human-Centered Design graduate student</b> at University of Washington.
                     <br></br>
-                    <b>Product manager</b> building Eno, a conversational AI platform, at Capital One. 
+                    A <b>Product manager</b> building Eno, a conversational AI platform, at Capital One. 
                     <br></br>
-                    <b>Ex- Senior software engineer</b> at Capital One.</p>
+                    An <b>Ex- Senior software engineer</b> at Capital One.</p>
+                    <Link to='/' className= 'link'>About</Link>
                     
                 </div>
                 <div className= "canvas-block">
@@ -33,7 +35,7 @@ function Home() {
                     <pointLight position={[-10, -10, -10]} />
                     <Box position={[0, -1.2, 0]} />
                     <Box position={[0, 1.2, -1]} />
-                </Canvas>
+                </Canvas> 
                 </div>
             </div>
             <div className= 'project-container'>
