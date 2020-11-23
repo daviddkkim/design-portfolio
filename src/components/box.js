@@ -2,6 +2,8 @@ import React, { useRef, useState } from 'react'
 import { useFrame, useLoader } from 'react-three-fiber'
 import * as THREE from 'three'
 import image from '../assets/david.jpg'
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
+
 
 function Box(props) {
     // This reference will give us direct access to the mesh
@@ -12,18 +14,29 @@ function Box(props) {
     const [active, setActive] = useState(false)
     // Rotate mesh every frame, this is outside of React without overhead
     useFrame(() => {
-      mesh.current.rotation.x = mesh.current.rotation.y += 0.01
+      mesh.current.rotation.x = mesh.current.rotation.y += 0.01;
     })
+
+    var cubeMaterialArray= [];
+    //cubeMaterialArray.push( new THREE.MeshBasicMaterial( {map: texture}));
+
     return (
       <mesh
         {...props}
         ref={mesh}
-        scale={active ? [1.5, 1.5, 1.5] : [1, 1, 1]}
+        //scale={active ? [1.5, 1.5, 1.5] : [1, 1, 1]}
         onClick={(e) => setActive(!active)}
         onPointerOver={(e) => setHover(true)}
         onPointerOut={(e) => setHover(false)}>
-        <boxBufferGeometry args={[1, 1, 1]} />
-        <meshBasicMaterial color={hovered ? 'hotpink' : 'orange'} map={texture}/>
+        <boxBufferGeometry args={[2, 2, .2]} />
+        <meshBasicMaterial attachArray="material" color={hovered ? 'yellow' : 'black'} />
+        <meshBasicMaterial attachArray="material" color={hovered ? 'yellow' : 'black'} />
+        <meshBasicMaterial attachArray="material" color={hovered ? 'yellow' : 'black'}/>
+        <meshBasicMaterial attachArray="material" color={hovered ? 'yellow' : 'black'}/>
+        <meshBasicMaterial attachArray="material" color={hovered ? 'yellow' : 'white'}  map={texture}/>
+        <meshBasicMaterial attachArray="material" color={hovered ? 'yellow' : 'white'} map={texture}/>
+
+
       </mesh>
     )
   }

@@ -1,6 +1,7 @@
-import * as React from 'react';
+import React, { Suspense, useRef} from 'react'
 import './home.css';
-import { Canvas } from "react-three-fiber"
+import { Canvas, extend, useFrame, useThree } from 'react-three-fiber'
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 import Box from '../components/box'
 import Card from '../components/card/card'
 import { ReactComponent as DeephireIcon } from '../assets/deephire.svg'
@@ -8,6 +9,14 @@ import {
     Link
   } from "react-router-dom"
 
+extend({OrbitControls})
+
+function Controls() {
+    const controls =useRef()
+    const {camera, gl } = useThree()
+    useFrame(() => controls.current.update())
+    return <orbitControls ref={controls} args={[camera, gl.domElement]} enableDamping dampingFactor={0.1} rotateSpeed={0.5} />
+}
 function Home() {
 
     return (
@@ -33,8 +42,10 @@ function Home() {
                     <ambientLight intensity={0.5} />
                     <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
                     <pointLight position={[-10, -10, -10]} />
-                    <Box position={[0, -1.2, 0]} />
-                    <Box position={[0, 1.2, -1]} />
+                    <Suspense fallback={<>Loading...</>}>
+                    <Box position={[0, 0, 0]} />
+                    </Suspense>
+                    <Controls/>
                 </Canvas> 
                 </div>
             </div>
