@@ -21,9 +21,7 @@ function Home() {
                     <p className='intro-body'>
                     A first-year <b>Human-Centered Design graduate student</b> at University of Washington.
                     <br></br>
-                    <br></br>
                     <b>Product manager</b> building Eno, a conversational AI platform, at Capital One. 
-                    <br></br>
                     <br></br>
                     <b>Ex- Senior software engineer</b> at Capital One.</p>
                     
