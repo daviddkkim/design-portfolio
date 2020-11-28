@@ -1,26 +1,29 @@
-import React, { Suspense, useRef} from 'react'
+import React, {useState} from 'react'
 import './home.css';
-import { Canvas, extend, useFrame, useThree } from 'react-three-fiber'
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
-import Box from '../components/box'
+import Boxes from '../components/box'
 import Card from '../components/card/card'
 import { ReactComponent as DeephireIcon } from '../assets/deephire.svg'
 import {
     Link
   } from "react-router-dom"
+  import MouseTooltip from 'react-sticky-mouse-tooltip';
+  
 
-extend({OrbitControls})
 
-function Controls() {
-    const controls =useRef()
-    const {camera, gl } = useThree()
-    useFrame(() => controls.current.update())
-    return <orbitControls ref={controls} args={[camera, gl.domElement]} enableDamping dampingFactor={0.1} rotateSpeed={0.5} />
-}
 function Home() {
+
+    const [hover, setHover] = useState(false)
+
 
     return (
         <div className='home-container'>
+             <MouseTooltip
+             visible={hover}
+            offsetX={15}
+            offsetY={10}
+             >
+                <span className='cursor-tooltip'>You can rotate the canvas and click on individual boxes to change color</span>
+            </MouseTooltip>
             <div className='intro-container'>
                 <div className="intro-block">
                     
@@ -37,16 +40,11 @@ function Home() {
                     <Link to='/' className= 'link'>About</Link>
                     
                 </div>
-                <div className= "canvas-block">
-                <Canvas>
-                    <ambientLight intensity={0.5} />
-                    <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
-                    <pointLight position={[-10, -10, -10]} />
-                    <Suspense fallback={<>Loading...</>}>
-                    <Box position={[0, 0, 0]} />
-                    </Suspense>
-                    <Controls/>
-                </Canvas> 
+                <div className= "canvas-block" 
+                onMouseEnter={() => setHover(true)}
+                onMouseLeave={() => setHover(false)}
+                >
+                    <Boxes></Boxes>
                 </div>
             </div>
             <div className= 'project-container'>

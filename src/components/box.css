@@ -1,0 +1,29 @@
+.canvas-layout {
+    display:flex;
+    flex-direction: column;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.settings-layout { 
+    margin-top:16px;
+    display:flex;
+   justify-content: flex-end;
+   margin-bottom:32px;
+}
+
+
+.setting-buttons {
+    background-color: #8a85ff;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    padding: 12px 12px;
+}
+button:focus { outline: none; }
+
+button:hover { 
+    background-color: white;
+    color: #8a85ff;
+}

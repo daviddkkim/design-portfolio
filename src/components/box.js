@@ -1,52 +1,96 @@
-import React, { useRef, useState } from 'react'
-import { useFrame, useLoader } from 'react-three-fiber'
-import * as THREE from 'three'
-import image from '../assets/david.jpg'
+import React, { useRef, useState, Suspense, useEffect} from 'react'
+import { Canvas, useFrame, useThree, extend } from 'react-three-fiber'
+import palettes from 'nice-color-palettes';
+import random from 'canvas-sketch-util/random';
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
+import './box.css';
 
 
+extend({OrbitControls})
+
+function Controls() {
+    const controls =useRef()
+    const {camera, gl } = useThree()
+    useFrame(() => controls.current.update())
+    return <orbitControls ref={controls} args={[camera, gl.domElement]} enableDamping dampingFactor={0.1} rotateSpeed={0.5} />
+}
+
+function swapPalette() {
+   const palette = random.pick(palettes);
+   console.log('palette change');
+   return palette;
+}
 function Box(props) {
+    const [colorset, changeColor] = useState(props.palette)
+    useEffect(() => { changeColor(props.palette) }, [props.palette]);
     // This reference will give us direct access to the mesh
     const mesh = useRef()
-    const texture = useLoader(THREE.TextureLoader, image)
+    //const texture = useLoader(THREE.TextureLoader, image)
     // Set up state for the hovered and active state
-    const [hovered, setHover] = useState(false)
-    const [active, setActive] = useState(false)
+    const t = Math.sin(.5 * Math.PI * 2);
     // Rotate mesh every frame, this is outside of React without overhead
+    console.log(colorset);
+
     useFrame(() => {
-      mesh.current.rotation.x = mesh.current.rotation.y += 0.007;
+      mesh.current.rotation.x = mesh.current.rotation.y += t *80000000000000;
+      mesh.current.rotation.z = mesh.current.rotation.x += t *80000000000000;
+      mesh.current.rotation.y = mesh.current.rotation.z += t *80000000000000;
+     
     })
-
-
+    
+    
     return (
       <mesh
         {...props}
         ref={mesh}
-        //scale={active ? [1.5, 1.5, 1.5] : [1, 1, 1]}
-        onClick={(e) => setActive(!active)}
-        onPointerOver={(e) => setHover(true)}
-        onPointerOut={(e) => setHover(false)}>
-        <boxBufferGeometry args={[2, 2, .2]} />
-        <meshBasicMaterial attachArray="material" color={hovered ? 'yellow' : 'black'} />
-        <meshBasicMaterial attachArray="material" color={hovered ? 'yellow' : 'black'} />
-        <meshBasicMaterial attachArray="material" color={hovered ? 'yellow' : 'black'}/>
-        <meshBasicMaterial attachArray="material" color={hovered ? 'yellow' : 'black'}/>
-        <meshBasicMaterial attachArray="material" color={hovered ? 'yellow' : 'white'}  map={texture}/>
-        <meshBasicMaterial attachArray="material" color={hovered ? 'yellow' : 'white'} map={texture}/>
-
-
+        key= {props.palette}
+        onClick={(e) => changeColor(swapPalette)}      >
+        <boxBufferGeometry args={[.25, .25, .25]} />
+       {/*  <meshStandardMaterial attach="material"  color={active? random.pick(palette): random.pick(getColor())}/>
+        <meshStandardMaterial attach="material"  color={active? random.pick(palette): random.pick(getColor())}/>
+        <meshStandardMaterial attach="material"  color={active? random.pick(palette): random.pick(getColor())}/>
+        <meshStandardMaterial attach="material"  color={active? random.pick(palette): random.pick(getColor())}/>
+        <meshStandardMaterial attach="material"  color={active? random.pick(palette): random.pick(getColor())}/>
+        <meshStandardMaterial attach="material"  color={active? random.pick(palette): random.pick(getColor())}/>  */}
+        <meshStandardMaterial attachArray="material"  color={random.pick(colorset)}/>
+        <meshStandardMaterial attachArray="material"  color={random.pick(colorset)}/>
+        <meshStandardMaterial attachArray="material"  color={random.pick(colorset)}/>
+        <meshStandardMaterial attachArray="material"  color={random.pick(colorset)}/>
+        <meshStandardMaterial attachArray="material"  color={random.pick(colorset)}/>
+        <meshStandardMaterial attachArray="material"  color={random.pick(colorset)}/> 
       </mesh>
     )
   }
 
-export default Box;
 
-/* export default function CanvasBox() {
-    return (
-        <div>
-            <Canvas>
-            <Box position={[-1.2, 0, 0]} />
-            <Box position={[1.2, 0, 0]} />
-            </Canvas>
-        </div>
+  function Boxes(){
+    const palette = random.pick(palettes);
+    const [color, randomizeColor] = useState(palette)
+
+    return(
+    <div className='canvas-layout'>
+      <Canvas>
+        <ambientLight intensity={0.5} />
+        <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
+        <pointLight position={[-10, -10, -10]} />
+        <Suspense fallback={<>Loading...</>}>
+        <Box palette= {color} position={[0.5, 0.5, .75]} />
+        <Box palette= {color} position={[-0.5, -0.5, 1.25]} />
+        <Box palette= {color} position={[-1, -1, 1.5]} />
+        <Box palette= {color} position={[1, 1, .5]} />
+        <Box palette= {color} position={[-1, 1, .5]} />
+        <Box palette= {color} position={[0, 0, 1]} />
+        <Box palette= {color} position={[-0.5, 0.5, .75]} />
+        <Box palette= {color} position={[0.5, -0.5, 1.25]} />
+        <Box palette= {color} position={[1, -1, 1.5]} />
+        </Suspense>
+        <Controls/>
+      </Canvas> 
+      <div className='settings-layout'>
+        <button className= 'setting-buttons' onClick={(e) => randomizeColor(swapPalette)} >Change palette </button>
+      </div>
+    </div>
     )
-} */
+  }
+
+  export default Boxes;
