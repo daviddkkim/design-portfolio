@@ -22,7 +22,7 @@ function Home() {
             offsetX={15}
             offsetY={10}
              >
-                <span className='cursor-tooltip'>You can rotate the canvas and click on individual boxes to change color</span>
+                <span className='cursor-tooltip'>Drag to rotate canvas and click on individual boxes to change color</span>
             </MouseTooltip>
             <div className='intro-container'>
                 <div className="intro-block">

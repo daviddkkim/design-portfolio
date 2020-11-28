@@ -5,7 +5,6 @@ import random from 'canvas-sketch-util/random';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 import './box.css';
 
-
 extend({OrbitControls})
 
 function Controls() {
@@ -21,15 +20,18 @@ function swapPalette() {
    return palette;
 }
 function Box(props) {
+
     const [colorset, changeColor] = useState(props.palette)
-    useEffect(() => { changeColor(props.palette) }, [props.palette]);
+    useEffect(() => { 
+      console.log('re-render');
+      changeColor(props.palette) },
+       [props.palette]);
     // This reference will give us direct access to the mesh
     const mesh = useRef()
     //const texture = useLoader(THREE.TextureLoader, image)
     // Set up state for the hovered and active state
     const t = Math.sin(.5 * Math.PI * 2);
     // Rotate mesh every frame, this is outside of React without overhead
-    console.log(colorset);
 
     useFrame(() => {
       mesh.current.rotation.x = mesh.current.rotation.y += t *80000000000000;
@@ -46,18 +48,13 @@ function Box(props) {
         key= {props.palette}
         onClick={(e) => changeColor(swapPalette)}      >
         <boxBufferGeometry args={[.25, .25, .25]} />
-       {/*  <meshStandardMaterial attach="material"  color={active? random.pick(palette): random.pick(getColor())}/>
-        <meshStandardMaterial attach="material"  color={active? random.pick(palette): random.pick(getColor())}/>
-        <meshStandardMaterial attach="material"  color={active? random.pick(palette): random.pick(getColor())}/>
-        <meshStandardMaterial attach="material"  color={active? random.pick(palette): random.pick(getColor())}/>
-        <meshStandardMaterial attach="material"  color={active? random.pick(palette): random.pick(getColor())}/>
-        <meshStandardMaterial attach="material"  color={active? random.pick(palette): random.pick(getColor())}/>  */}
+        <meshStandardMaterial attach="material"  color={random.pick(colorset)}/>
+       {/*  <meshStandardMaterial attachArray="material"  color={random.pick(colorset)}/>
         <meshStandardMaterial attachArray="material"  color={random.pick(colorset)}/>
         <meshStandardMaterial attachArray="material"  color={random.pick(colorset)}/>
         <meshStandardMaterial attachArray="material"  color={random.pick(colorset)}/>
         <meshStandardMaterial attachArray="material"  color={random.pick(colorset)}/>
-        <meshStandardMaterial attachArray="material"  color={random.pick(colorset)}/>
-        <meshStandardMaterial attachArray="material"  color={random.pick(colorset)}/> 
+        <meshStandardMaterial attachArray="material"  color={random.pick(colorset)}/>  */}
       </mesh>
     )
   }
