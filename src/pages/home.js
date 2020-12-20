@@ -4,7 +4,7 @@ import Boxes from '../components/box'
 import Card from '../components/card/card'
 import { ReactComponent as DeephireIcon } from '../assets/deephire.svg'
 import {
-    Link, useHistory
+    Link
   } from "react-router-dom"
   import MouseTooltip from 'react-sticky-mouse-tooltip';
   
