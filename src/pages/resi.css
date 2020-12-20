@@ -1,0 +1,238 @@
+
+  .hero-image{
+    background-image: url('../assets/restaurant-tint.png');
+    background-size: 100% 100%;
+    min-width: 100%;
+    min-height: 100%;
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+
+  }
+
+  .hero-image-text-container{
+    max-width:800px;
+    margin-left:auto;
+    margin-right:auto;
+  }
+  .hero-image-text-small{
+    font-size: 32px;
+    margin: 0px;
+    font-weight: 700;
+    color: #cccccc;
+}
+  .hero-image-text-big{
+    font-size: 40px;
+    margin: 0px;
+    font-weight: 700;
+    color: white;
+    margin-top:32px;
+}
+
+  .intro-image-container{
+    position:relative;
+    text-align:center;
+    color:white;
+  }
+  .centered-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 22px;
+  font-weight: 600;
+  color:#cccccc;
+  }
+
+  .margin-wrapper{
+    color:#cccccc;
+    text-align:left;
+    padding: 80px 0px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right:auto;
+  }
+  .intro-wrapper {
+      display:flex;
+      flex-direction:column;
+  }
+
+  .title-name {
+      font-size:48px;
+      margin-bottom: 0px;
+      margin-top:0px;
+      color:white;
+  }
+  
+  .title-description {
+    font-size: 20px;
+    margin-top:0px;    
+  }
+
+  .project-title {
+      display:block;
+      max-width:75%;
+  }
+
+  .project-role {
+      margin-top: 60px;
+      font-size: 20px;
+      line-height: 32px;
+      display:flex;
+      flex-direction: row;
+      margin-bottom: 80px;
+    }
+    .project-role-title {
+    margin-bottom: 0px;
+    margin-top:0px; 
+    margin-right: auto;
+    }
+
+.project-problem-statement {
+    font-size: 32px;
+    margin: 0px;
+    font-weight: 700;
+    color: white;
+}
+.project-hero-text{
+    font-size: 32px;
+    margin: 0px;
+    font-weight: 700;
+    color: white;
+    margin-top:40px;
+    max-width:800px;
+}
+.money-shot-container{
+    max-width: 96%;
+    margin: auto;
+    height:auto;
+    margin-top: 64px;
+  }
+.project-content{
+    margin-bottom: 100px;
+}
+.strong-white{
+    color:white;
+}
+.strong-purple{
+  color:#9381FF;
+}
+
+.money-shot{
+    /* background-image: url('../assets/Moneyshot2.png');
+    background-size: 100% 100%; */
+    width:100%;
+    margin-left: auto;
+    margin-right: auto;
+    height:auto;
+      
+  }
+
+  .project-content-text{
+    font-size: 20px;
+    line-height: 32px;
+    margin-top:40px;
+}
+
+.project-content-title {
+    font-size:24px;
+    line-height:32px;
+    font-weight:bold;
+    margin-bottom:0px;
+    color:#cccccc;
+
+}
+
+.content-wrapper{
+  max-width: 700px;
+}
+.regular-text {
+  line-height: 188%;
+  font-size: 20px;
+}
+
+
+.semi-hero-image{
+  background-image: url('../assets/secondPic.png');
+  background-size: 100% 100%;
+  min-width: 100%;
+  min-height: 100%;
+  height: 650px;
+}
+
+.responsive-image{
+  max-width:100%;
+  height:auto;
+}
+.set-image-container{
+  margin-top:40px;
+  width:100%;
+  margin-left:auto;
+  margin-right:auto;
+  display:flex;
+}
+.responsive-set-image{
+  max-width:100%;
+  height:auto;
+  margin-right:auto;
+}
+
+@media screen and (min-width: 1280px) {
+  .content-wrapper{
+    max-width: 800px;
+  }
+  .project-problem-statement {
+    font-size: 32px;
+  }
+  
+  .margin-wrapper{
+    color:#cccccc;
+    text-align:left;
+    padding: 80px 0px;
+    max-width: 980px;
+    margin-left: auto;
+    margin-right:auto;
+  }
+  .regular-text {
+    line-height: 188%;
+    font-size: 20px;
+  }
+
+}
+
+@media screen and (min-width: 1440px) {
+  .content-wrapper{
+    max-width: 900px;
+  }
+.project-title{
+  min-width: 900px;
+}
+.project-problem-statement {
+  width: 900px;
+  font-size: 40px;
+}
+
+
+  .margin-wrapper{
+    color:#cccccc;
+    text-align:left;
+    padding: 80px 0px;
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right:auto;
+  }
+  .project-content-text{
+    font-size: 22px;
+    line-height: 32px;
+    margin-top:32px;
+    line-height: 160%;
+
+}
+
+.title-description {
+  font-size: 22px;
+  margin-top:0px;    
+}
+}
+
+

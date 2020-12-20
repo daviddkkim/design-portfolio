@@ -1,15 +1,31 @@
-.header {
+ .header {
     overflow: hidden;
-    background-color: #282c34;
+    background-color: #1a1a1a;
     display: flex;
 	align-items: center;
 	justify-content: space-between;
     flex-wrap: wrap;
     position: relative;
-    border-bottom-left-radius: 50% 20%;
-    border-bottom-right-radius: 50% 20%;
     height: 64px;
-}
+} 
+
+
+/* .header{
+    background-color:none;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=80);
+    -moz-opacity: 0.80;
+    -khtml-opacity: 0.8;
+    opacity: 0.8;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 64px;
+    padding: 0;
+    margin: 0;
+} */
 
 .title {
     display: flex;
@@ -47,3 +63,4 @@ a.horizontal {
     color: white;
 
 }
+

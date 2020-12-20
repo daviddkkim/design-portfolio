@@ -4,7 +4,7 @@ import Boxes from '../components/box'
 import Card from '../components/card/card'
 import { ReactComponent as DeephireIcon } from '../assets/deephire.svg'
 import {
-    Link
+    Link, useHistory
   } from "react-router-dom"
   import MouseTooltip from 'react-sticky-mouse-tooltip';
   
@@ -13,7 +13,7 @@ import {
 function Home() {
 
     const [hover, setHover] = useState(false)
-
+    const history = useHistory();
 
     return (
         <div className='home-container'>
@@ -22,7 +22,7 @@ function Home() {
             offsetX={15}
             offsetY={10}
              >
-                <span className='cursor-tooltip'>Drag to rotate canvas and click on individual boxes to change color</span>
+                <span className='cursor-tooltip'>Drag to rotate canvas and scroll to zoom in/out</span>
             </MouseTooltip>
             <div className='intro-container'>
                 <div className="intro-block">
@@ -48,15 +48,17 @@ function Home() {
                 </div>
             </div>
             <div className= 'project-container'>
-            <div className= 'section-title'> 
-            <span className= 'title-text'>Past Design Work</span>
+                {/* <div className= 'section-title'> 
+                <span className= 'title-text'>Product Design</span>
+                </div> */}
+                <div className= 'card-container'>
+                    <Card  image= {DeephireIcon} title='Resi' content= 'Design Challenge: Restaurant Reservation during COVID-19' project={1} ></Card>
+                    <Card className = 'card-item' title='Deephire' content= 'Designing an onboarding experience for a video-interview start-up' project={2} link='https://dkimdesign.me/Deephire-Designing-an-Onboarding-flow-b3e667925a054c5b89c859189f86f238'></Card>
+                </div>
             </div>
-            <div className= 'card-container'>
-                <Card className = 'card-item' image= {DeephireIcon} title='Project 1' content= 'something something' ></Card>
-                <Card className = 'card-item' title='Project 2' content= 'something something something else' ></Card>
+            <div className= 'bottom-footer'>
+            <span className='footer-message'>Made with &hearts; by David</span>
             </div>
-
-        </div>
         
         </div>
     )

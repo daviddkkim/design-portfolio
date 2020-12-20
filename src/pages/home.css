@@ -1,8 +1,7 @@
 .home-container {
     display:grid;
     min-height:90vh;
-    height: auto;
-    grid-template-rows: 90vh Auto;
+    grid-template-rows: 90vh auto auto;
 }
 
 .intro-container {
@@ -10,6 +9,7 @@
     display: grid;
     padding: 0px 136px;
     grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
     
 }
 .intro-block{
@@ -36,27 +36,46 @@
 }
 
 .project-container {
-    
-    padding:48px 180px;
+    padding:100px 0px;
     display:grid;
-    grid-template-rows: 40px Auto; 
+/*     grid-template-rows: 70px Auto; 
+ */    
+
+    grid-template-rows:auto;
     background-color: white;
+    row-gap: 100px;
+
    
 }
 
 
 .card-container {
-    display:grid;
-    margin-top: 32px;
-    grid-template-rows: 50% 50%;
+    min-height: 100vh;
+    display:grid;  
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+    column-gap:90px;
+    max-width:1080px;
+    width: 83.333%;
+    margin-left:auto;
+    margin-right:auto;
 }
 
+.card-item {
+    margin: 100px;
+}
 
 .section-title { 
-    font-size: 24px;
+    font-size: 50px;
+    line-height: 60px;
+    max-width:1080px;
+    width: 83.333%;
+    margin-left:auto;
+    margin-right:auto;
     font-weight: bold;
     color: black;
     border-bottom: 1px solid white;
+    justify-content: center;
 }
 
 .link {
@@ -72,4 +91,19 @@
     border: 2px solid #8a85ff;
     font-size: 14px;
     
+}
+
+.bottom-footer {
+    display:flex;
+    height: 200px;
+    padding: 0px 30%;
+    padding-top: 50px;
+    justify-content: center;
+    background-color:black;
+}
+
+.footer-message {
+    font-size: 16px;
+    line-height: 26px;
+    color: white;
 }

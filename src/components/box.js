@@ -10,6 +10,7 @@ import * as THREE from 'three'
 const tempObject = new THREE.Object3D()
 const tempColor = new THREE.Color()
 
+
 extend({OrbitControls})
 
 function Controls() {
@@ -139,6 +140,7 @@ function swapPalette() {
         <Controls/>
       </Canvas> 
       <div className='settings-layout'>
+        <span className='caption'>*Interact with the 3D model by dragging or scrolling</span>
         <button className= 'setting-buttons' onClick={(e) => randomizeColor(swapPalette)} >Change palette </button>
       </div>
     </div>
