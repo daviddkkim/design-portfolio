@@ -5,9 +5,9 @@ import {Link} from 'react-router-dom';
 function Card(props) {
     
     let image;
-    if(props.project==1){
+    if(props.project===1){
         image = <div className= 'image-1'></div>
-    } else if (props.project ==2 ){
+    } else if (props.project ===2 ){
         image= <div className= 'image-2'></div>
     }
 

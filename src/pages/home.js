@@ -13,7 +13,7 @@ import {
 function Home() {
 
     const [hover, setHover] = useState(false)
-    const history = useHistory();
+    //const history = useHistory();
 
     return (
         <div className='home-container'>

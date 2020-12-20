@@ -1,10 +1,8 @@
 import React from 'react'
 import './resi.css';
-import moneyShot from '../assets/Moneyshot2.png'
 import research1 from '../assets/research1.png'
 import research2 from '../assets/research2.png'
 import research3 from '../assets/research3.png'
-import restaurant from '../assets/restaurant-resize.png'
 import loadingVid1 from '../assets/Loading_First.mp4'
 import loadingVid2 from '../assets/Loading_Second.mp4'
 import chatVid from '../assets/Chat_Feature_cut.mp4'
@@ -57,7 +55,7 @@ function Resi() {
                 </p>
             </section>
         </div>
-        <img src="/static/media/secondPic.4990627d.png" className="responsive-image"></img>
+        <img src="/static/media/secondPic.4990627d.png" className="responsive-image" alt='break-image1'></img>
         <div className='content-wrapper margin-wrapper'>
             <section className='project-content'>
                 <h5 className='project-content-title'>Research & Key Insights</h5>
@@ -70,9 +68,9 @@ function Resi() {
                 • Most common pain point for customers is that they cannot know what the restaurant experience is going to be like before showing up. Will it be crowded? Will they be cleanly? Will they enforce social distancing?             
                 </p>
                 <div className='set-image-container'>
-                <img src={research1} className="responsive-set-image"></img>
-                <img src={research2} className="responsive-set-image"></img>
-                <img src={research3} className="responsive-image"></img>
+                <img src={research1} className="responsive-set-image" alt='research-image1'></img>
+                <img src={research2} className="responsive-set-image" alt='research-image2'></img>
+                <img src={research3} className="responsive-image" alt='research-image3'></img>
                 </div>
 
                {/*  <div className='money-shot-container'>

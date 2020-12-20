@@ -138,6 +138,7 @@
     line-height: 32px;
     margin-top:40px;
     line-height: 160%;
+
 }
 
 .project-content-big-text{
@@ -301,6 +302,8 @@
     line-height: 32px;
     margin-top:32px;
     line-height: 160%;
+    max-width:950px;
+
 
 }
 .video {
