@@ -11,7 +11,7 @@ function App() {
       <Header title = 'daviddkim.' navigation = {['Work','About']}></Header>
         <Switch>
           <Route path="/" component= {Home} exact />
-          <Route path="/Resi" component= {Resi} exact />
+          <Route path="/Resi" component= {Resi}  />
 
           <Route path="/about" render = { () => (<div>about</div>)} />
           <Route path="/work" render = { () => (<div>work</div>)} />  
