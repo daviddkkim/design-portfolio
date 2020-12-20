@@ -5,6 +5,12 @@ import research1 from '../assets/research1.png'
 import research2 from '../assets/research2.png'
 import research3 from '../assets/research3.png'
 import restaurant from '../assets/restaurant-resize.png'
+import loadingVid1 from '../assets/Loading_First.mp4'
+import loadingVid2 from '../assets/Loading_Second.mp4'
+import chatVid from '../assets/Chat_Feature_cut.mp4'
+import reserveVid from '../assets/Reserve.mp4'
+import trafficVid from '../assets/Check_Traffic.mp4'
+import {Link} from 'react-router-dom';
 
 function Resi() {
 
@@ -81,27 +87,96 @@ function Resi() {
                 <p className='project-content-text'>
                 Majority of customers will be making reservations on their way back to dining-normalcy. Main blocker for customers looking to make reservation is the unknown around restaurant environment. What are some ways we can bring the needed clarity here?         
                 </p>
-               
-
-               {/*  <div className='money-shot-container'>
-                    <img className='money-shot' src={moneyShot}/>
-                </div> */}
             </section>
+            </div>
+
+            <section className='video-section'>
+            <video autoPlay loop muted className='video'>
+                <source src={loadingVid1} type='video/mp4'/>
+            </video>
+            <video autoPlay loop muted className='video'>
+                <source src={loadingVid2} type='video/mp4'/>
+            </video>
+            </section>
+            <div className='content-wrapper margin-wrapper'>
+
             <section className='project-content'>
                 <h5 className='project-content-title'>Ideation</h5>
-                <p className='project-hero-text'>
-                    How might we <strong class='strong-purple'>help covid-concious customers feel ensured that their reserved dining experience will match their COVID-19 preferences?</strong>
+                <p className='project-content-text'>
+                    How might we help covid-concious customers feel ensured that their reserved dining experience will match their COVID-19 preferences?
+                </p>
+                <p className='project-content-big-text'>
+                <strong className='strong-white'>
+                    1. <strong className='strong-purple'>Visualization of the restaurant layout </strong> for users to assess and choose the table they dine in. 
+                </strong>
                 </p>
                 <p className='project-content-text'>
-                Majority of customers will be making reservations on their way back to dining-normalcy. Main blocker for customers looking to make reservation is the unknown around restaurant environment. What are some ways we can bring the needed clarity here?         
+                Rationale
                 </p>
-               
-
-               {/*  <div className='money-shot-container'>
-                    <img className='money-shot' src={moneyShot}/>
-                </div> */}
+                <p className='project-content-big-text'>
+                <strong class='strong-white'>
+                    2. <strong className='strong-purple'>Chat feature </strong> for users and restaurants to connect and demystify COVID-19 concerns. 
+                </strong>
+                </p>
+                <p className='project-content-text'>
+                Rationale
+                </p>
+                <p className='project-content-big-text'>
+                <strong className='strong-white'>
+                    3. <strong className='strong-purple'>Reservation receipt</strong> for users to check table traffic of the restaurant all the way up to reservation. 
+                </strong>
+                </p>
+                <p className='project-content-text'>
+                Rationale
+                </p>
             </section>
-        </div>
+            <section className='project-content'>
+                <h5 className='project-content-title'>Proposed Features</h5>
+                <p className='project-hero-text'>
+                    Resi
+                </p>
+                <p className='project-content-text'>
+                Make dining reservations without the uncertainty.
+                </p>
+                <section className="feature-section">
+                    <video autoPlay loop muted className='feature-video'>
+                        <source src={reserveVid} type='video/mp4'/>
+                    </video>
+                    <section className='project-feature-content'>
+                    <p className="project-feature-big-text"> <strong className="strong-purple">Assess</strong> <strong className="strong-white"> the restaurant layout and <br/><strong className="strong-purple">Choose</strong> your table </strong></p>
+                    <p className="project-content-text"> Have any questions? Chat with restaurants and square away any doubts you might have about what the restaurants are doing to provide a sanitary and safe environment.</p>
+                    </section>
+                </section>
+                <section className="feature-section">
+                    <video autoPlay loop muted className='feature-video'>
+                        <source src={trafficVid} type='video/mp4'/>
+                    </video>
+                    <section className='project-feature-content'>
+                    <p className="project-feature-big-text"> <strong className="strong-purple">Check</strong> <strong className="strong-white">table traffic all the way <br/>until your reservation</strong></p>
+                    <p className="project-content-text"> Keep your eyes on the table traffic. If you feel that the restaurant will be too crowded at your reservation time, feel free to cancel at any moment.</p>
+                    </section>
+                </section>
+                <section className="feature-section">
+                    <video autoPlay loop muted className='feature-video'>
+                        <source src={chatVid} type='video/mp4'/>
+                    </video>
+                    <section className='project-feature-content'>
+                    <p className="project-feature-big-text"> <strong className="strong-purple">Connect</strong> <strong className="strong-white">with restaurants <br/>about their COVID-19 guidelines</strong></p>
+                    <p className="project-content-text"> Have any questions? Chat with restaurants and square away any doubts you might have about what the restaurants are doing to provide a sanitary and safe environment.</p>
+                    </section>
+                </section>
+            </section>
+            <section className='project-content'>
+                <h5 className='project-content-title'>Reflection</h5>
+                <p className='project-hero-text'>
+                    Blalaalal <strong class='strong-purple'>blahlalaal</strong>
+                </p>
+                <p className='project-content-text'>
+                Reflection content        
+                </p>
+                <Link className= 'link' to={'/'}>Back to main</Link>
+            </section>
+            </div>
         </div>
     </div>
     )
