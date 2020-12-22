@@ -16,12 +16,6 @@ function Resi() {
 
     return (
     <div>
-        {/* <div className='intro-image-container'>
-        <img src={restaurant} className="responsive-image"></img>
-        <div className='centered-text'> 
-        <p>d</p>
-        <p className='project-problem-statement'>Let's go</p>
-        </div> */}
         <div className='hero-image'>
             <img src={heroRestaurant} className='background-image' alt='hero-image1'></img>
             <div className='hero-image-text-container'>
