@@ -1,20 +1,42 @@
 
   .hero-image{
-    background-image: url('../assets/restaurant-tint.png');
-    background-size: 100% 100%;
     min-width: 100%;
     min-height: 100%;
-    height: 100vh;
     display:flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 
   }
 
+  .background-image{
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      max-height: 100vh;
+      min-height: 100vh;
+      opacity: 0.5;
+  }
+
+  .workaround{
+    width: 100%;
+    height: 100%;
+    max-height: calc(100vh - 64px);
+    z-index: -1;
+    background-image: url('../assets/restaurant-1.png');
+    background-size: 100% 100%;
+    visibility: hidden;
+  }
   .hero-image-text-container{
     max-width:800px;
     margin-left:auto;
     margin-right:auto;
+    z-index: 2;
+    min-height: calc(100vh - 64px);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
   }
   .hero-image-text-small{
     font-size: 32px;

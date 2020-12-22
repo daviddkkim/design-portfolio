@@ -9,6 +9,7 @@ import chatVid from '../assets/Chat_Feature_cut.mp4'
 import reserveVid from '../assets/Reserve.mp4'
 import trafficVid from '../assets/Check_Traffic.mp4'
 import {Link} from 'react-router-dom';
+import heroRestaurant from '../assets/restaurant-1.png'
 
 function Resi() {
 
@@ -21,11 +22,13 @@ function Resi() {
         <p className='project-problem-statement'>Let's go</p>
         </div> */}
         <div className='hero-image'>
+            <img src={heroRestaurant} className='background-image' alt='hero-image1'></img>
             <div className='hero-image-text-container'>
             <h5 className='hero-image-text-small'>Product Design Concept</h5>
             <h4 className='hero-image-text-big'> Helping local restaurants get back dine-in customers. </h4>
             </div>
         </div>
+
         <div >
         <div className='intro-wrapper margin-wrapper'>
             <section className='project-title'>
