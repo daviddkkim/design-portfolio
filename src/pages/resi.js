@@ -10,6 +10,7 @@ import reserveVid from '../assets/Reserve.mp4'
 import trafficVid from '../assets/Check_Traffic.mp4'
 import {Link} from 'react-router-dom';
 import heroRestaurant from '../assets/restaurant-1-faster-min.png'
+import breakImage from '../assets/secondPic.png'
 
 function Resi() {
 
@@ -58,7 +59,7 @@ function Resi() {
                 </p>
             </section>
         </div>
-        <img src="/static/media/secondPic.4990627d.png" className="responsive-image" alt='break-image1'></img>
+        <img src={breakImage} className="responsive-image" alt='break-image1'></img>
         <div className='content-wrapper margin-wrapper'>
             <section className='project-content'>
                 <h5 className='project-content-title'>Research & Key Insights</h5>
