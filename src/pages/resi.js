@@ -104,7 +104,7 @@ function Resi() {
             <section className='project-content'>
                 <h5 className='project-content-title'>Ideation</h5>
                 <p className='project-content-text'>
-                    How might we help covid-concious customers feel ensured that their reserved dining experience will match their COVID-19 preferences?
+                    When looking at the question, "How might we help covid-concious customers feel ensured that their reserved dining experience will match their COVID-19 preferences?", the main pain points were centered around the uncertainty customers felt when thinking about going back to restaurants. Here are the highlighted ideas that I brainstormed.
                 </p>
                 <p className='project-content-big-text'>
                 <strong className='strong-white'>
@@ -112,7 +112,7 @@ function Resi() {
                 </strong>
                 </p>
                 <p className='project-content-text'>
-                Rationale
+                Questions like "how close would I be to other customers?" and "how crowded would the restaurants be?" sat atop customer's minds. I hypothesized that a visual representation of the restaurant layout and the ability to reserve a specific table would empower the customer to be confident in making the reservation.
                 </p>
                 <p className='project-content-big-text'>
                 <strong class='strong-white'>
@@ -120,7 +120,7 @@ function Resi() {
                 </strong>
                 </p>
                 <p className='project-content-text'>
-                Rationale
+                Guidelines on COVID-19 are rapidly changing. Restaurants are not providing customers with the right information on how they are tackling them. Having to call restaurnats added unecessary friction. I hypothesized that a chat feature to communicate seemlessly with restaurnats will drive up customer's confidence.
                 </p>
                 <p className='project-content-big-text'>
                 <strong className='strong-white'>
@@ -128,7 +128,7 @@ function Resi() {
                 </strong>
                 </p>
                 <p className='project-content-text'>
-                Rationale
+                Things can change from the moment the customers make the reservation and until they have to show up. I hypothesized that giving customers a way to keep up-to-date with the restaurant traffic will help customers make the reservation and ultimately have a better dining experience.
                 </p>
             </section>
             <section className='project-content'>
