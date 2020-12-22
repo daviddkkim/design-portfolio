@@ -9,7 +9,7 @@ import chatVid from '../assets/Chat_Feature_cut.mp4'
 import reserveVid from '../assets/Reserve.mp4'
 import trafficVid from '../assets/Check_Traffic.mp4'
 import {Link} from 'react-router-dom';
-import heroRestaurant from '../assets/restaurant-1-faster-min.png'
+import heroRestaurant from '../assets/restaurant-1-faster-min.jpeg'
 import breakImage from '../assets/secondPic.png'
 
 function Resi() {
