@@ -115,7 +115,7 @@ function InterEd() {
         <section className={styles.projectContent}>
                 <h5 className={styles.projectContentTitle}>Ideation</h5>
                 <p className={styles.projectHeroText}>
-                We hypothesized that a <strong class={styles.strongPurple}>digital education platform</strong> with the following features can help reduce cognitive load and make classes more engaging:
+                We hypothesized that a <strong class={styles.strongPurple}>digital education platform</strong> with the following features can help reduce cognitive load and thus, make classes more engaging:
                 </p>
                 <div className={styles.setImageContainer}>
                 <div>
@@ -138,7 +138,7 @@ function InterEd() {
                 </div>
                 </div>
                 <p className={styles.projectContentText}>
-                The main pain point we wanted to tackle was the added cognitive load to teachers due to needing to use multiple new technologies for class lessons and remote environmental issues. We felt that a digital platform centered around these three features can help solve the aforementioned problem, thereby also solving for other peripheral problems we discovered.
+                The main pain point we wanted to tackle was the added cognitive load to teachers due to needing to use multiple new technologies for class lessons and remote environmental issues. We felt that a digital platform centered around these three features can help reduce teachers' cognitive load and bring more engagement to classes, thereby improving classroom interactions.
                 
                 </p>
             </section>
@@ -200,7 +200,13 @@ function InterEd() {
             <div className={[styles.contentWrapper, styles.marginWrapper].join(' ')}>
 
             <section className={styles.projectContent}>
-                <h5 className={styles.projectContentTitleWithMargin}>Final Design </h5>
+                <h5 className={styles.projectContentTitle}>Final Design </h5>
+                <p className={styles.projectHeroText} style={{marginBottom: '10px' }}>
+                    InterEd
+                </p>
+                <p className={styles.projectContentText} style={{marginBottom: '80px' , marginTop: '0px'}}>
+                This solution helps teachers spend less energy on finding and operating new and confusing tools to make classes engaging. With a robust suite of tools, InterEd will allow teachers to focus their attention on the students.
+                </p>
                 <section className={styles.featureSection}>
                     <img src={FeatureHome} className={styles.featureVideo} alt='feature-1'/>
                     <section className={styles.projectFeatureContent}>

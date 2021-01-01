@@ -180,7 +180,13 @@ function Deephire() {
             <div className={[styles.contentWrapper, styles.marginWrapper].join(' ')}>
 
             <section className={styles.projectContent}>
-                <h5 className={styles.projectContentTitleWithMargin}>Final Design </h5>
+                <h5 className={styles.projectContentTitle}>Final Design </h5>
+                <p className={styles.projectHeroText} style={{marginBottom: '10px' }}>
+                    Deephire Onboarding Feature
+                </p>
+                <p className={styles.projectContentText} style={{marginBottom: '80px' , marginTop: '0px'}}>
+                This solution helps candidates understand clearly and efficiently what the rules of our interview platform is. This will allow candidates to be able to finish their interviews faster, with better quality, and without needing manual support.
+                </p>
                 <section className={styles.featureSection}>
                     <video autoPlay loop muted className={styles.featureVideo}>
                         <source src={reserveVid} type='video/mp4'/>
