@@ -66,7 +66,7 @@ function Resi() {
                 <p className='project-content-text'>
                 • Customers prefer reservations for their first-time back dining-in.
                 <br/>
-                • Most common pain point for customers is that they cannot know what the restaurant experience is going to be like before showing up. Will it be crowded? Will they be cleanly? Will they enforce social distancing?             
+                • Most common painpoint for customers is that they cannot know what the restaurant experience is going to be like before showing up. Will it be crowded? Will they be cleanly? Will they enforce social distancing?             
                 </p>
                 <div className='set-image-container'>
                 <img src={research1} className="responsive-set-image" alt='research-image1'></img>
@@ -102,7 +102,7 @@ function Resi() {
             <section className='project-content'>
                 <h5 className='project-content-title'>Ideation</h5>
                 <p className='project-content-text'>
-                    When looking at the question, "How might we help covid-concious customers feel ensured that their reserved dining experience will match their COVID-19 preferences?", the main pain points were centered around the uncertainty customers felt when thinking about going back to restaurants. Here are the highlighted ideas that I brainstormed.
+                    When looking at the question, "How might we help covid-concious customers feel ensured that their reserved dining experience will match their COVID-19 preferences?", the main painpoints were centered around the uncertainty customers felt when thinking about going back to restaurants. Here are the highlighted ideas that I brainstormed.
                 </p>
                 <p className='project-content-big-text'>
                 <strong className='strong-white'>

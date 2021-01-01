@@ -138,7 +138,7 @@ function InterEd() {
                 </div>
                 </div>
                 <p className={styles.projectContentText}>
-                The main painpoint we wanted to tackle was the added cognitive load to teachers due to needing to use multiple new technologies for class lessons and remote environmental issues. We felt that a digital platform centered around these three features can help solve the aforementioned problem, thereby also solving for other peripheral problems we discovered.
+                The main pain point we wanted to tackle was the added cognitive load to teachers due to needing to use multiple new technologies for class lessons and remote environmental issues. We felt that a digital platform centered around these three features can help solve the aforementioned problem, thereby also solving for other peripheral problems we discovered.
                 
                 </p>
             </section>
