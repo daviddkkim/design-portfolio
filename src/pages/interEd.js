@@ -118,24 +118,24 @@ function InterEd() {
                 We hypothesized that a <strong class={styles.strongPurple}>digital education platform</strong> with the following features can help reduce cognitive load and thus, make classes more engaging:
                 </p>
                 <div className={styles.setImageContainer}>
-                <div>
-                    <img src={classImage} className={[styles.responsiveSetImage, styles.circularImage].join(' ')} alt='research-image1'></img>
-                    <p className={styles.projectContentText}>
-                    System for creating lesson plans and content for class.
-                    </p>
-                </div>
-                <div>
-                    <img src={videoImage} className={[styles.responsiveSetImage, styles.circularImage].join(' ')} alt='research-image2'></img>
-                    <p className={styles.projectContentText}>
-                    Video communication platform built for education.
-                    </p>
-                </div>
-                <div>
-                    <img src={historyImage} className={[styles.responsiveImage, styles.circularImage].join(' ')} alt='research-image3'></img>
-                    <p className={styles.projectContentText}>
-                    Classroom insights for improving remote instruction.
-                    </p>
-                </div>
+                    <div>
+                        <img src={classImage} className={[styles.responsiveSetImage, styles.circularImage].join(' ')} alt='research-image1'></img>
+                        <p className={styles.projectContentText}>
+                        System for creating lesson plans and content for class.
+                        </p>
+                    </div>
+                    <div>
+                        <img src={videoImage} className={[styles.responsiveSetImage, styles.circularImage].join(' ')} alt='research-image2'></img>
+                        <p className={styles.projectContentText}>
+                        Video communication platform built for education.
+                        </p>
+                    </div>
+                    <div>
+                        <img src={historyImage} className={[styles.responsiveSetImage, styles.circularImage].join(' ')} alt='research-image3'></img>
+                        <p className={styles.projectContentText}>
+                        Classroom insights for improving remote instruction.
+                        </p>
+                    </div>
                 </div>
                 <p className={styles.projectContentText}>
                 The main pain point we wanted to tackle was the added cognitive load to teachers due to needing to use multiple new technologies for class lessons and remote environmental issues. We felt that a digital platform centered around these three features can help reduce teachers' cognitive load and bring more engagement to classes, thereby improving classroom interactions.

@@ -413,4 +413,98 @@
   }
 }
 
+@media screen and (max-width: 800px){
+  .titleName {
+    font-size:36px;
+    margin-bottom: 0px;
+    margin-top:0px;
+    color:black;
+    line-height:150%;
+
+}
+  .setImageContainer{
+    margin-top:40px;
+    width:100%;
+    margin-left:auto;
+    margin-right:auto;
+    display:grid;
+    row-gap: 40px;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .projectContentText{
+    font-size: 16px;
+    line-height: 150%;
+    font-family: 'Roboto', sans-serif;  
+  }
+
+  .projectHeroText{
+    font-size: 24px;
+    margin: 0px;
+    font-weight: 700;
+    color: black;
+    margin-top:40px;
+    line-height: 160%;
+
+}
+
+.titleDescription {
+  font-size: 20px;
+  margin-top:0px;
+  color: #595959;  
+  
+}
+
+.projectTitle {
+    display:block;
+    max-width:100%;
+}
+
+.projectRole {
+    margin-top: 60px;
+    font-size: 16px;
+    line-height: 32px;
+    display:flex;
+    flex-direction: row;
+    margin-bottom: 80px;
+    text-align: center;
+
+  }
+  .projectRoleTitle {
+  margin-bottom: 0px;
+  margin-top:0px; 
+  margin-right: auto;
+
+  }
+
+.projectProblemStatement {
+  font-size: 24px;
+  margin: 0px;
+  font-weight: 700;
+  color: black;
+  line-height: 160%;
+
+}
+.marginWrapper{
+  color:black;
+  text-align:left;
+  padding: 40px 24px;
+  
+}
+.featureVideo{
+  box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.05), 
+  0 8px 8px 8px rgba(0,0,0,0.25), 
+  0 16px 16px rgba(0,0,0,0.25);
+  width: 100%;
+  height:auto;
+}
+.projectContentBigText{
+  font-size: 18px;
+  line-height: 160%;
+  max-width:700px;
+  margin-top: 0px;
+}
+} 
+
 
