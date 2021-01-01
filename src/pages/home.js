@@ -2,7 +2,6 @@ import React, {useState} from 'react'
 import './home.css';
 import Boxes from '../components/box'
 import Card from '../components/card/card'
-import { ReactComponent as DeephireIcon } from '../assets/deephire.svg'
 import MouseTooltip from 'react-sticky-mouse-tooltip';
   
 
@@ -51,9 +50,23 @@ function Home() {
                 <div className= 'card-container'>
                 <Card className = 'card-item' title='InterEd' content= 'Improving remote K-12 classroom interactions between teachers and students.' project={3} ></Card>
 
-                    <Card  image= {DeephireIcon} title='Resi' content= 'Design Challenge: Restaurant Reservation during COVID-19' project={1} ></Card>
+                    <Card  title='Resi' content= 'Design Challenge: Restaurant Reservation during COVID-19' project={1} ></Card>
                     <Card className = 'card-item' title='Deephire' content= 'Designing an onboarding experience for a video-interview start-up' project={2} ></Card>
 
+                </div>
+            </div>
+            <div className= 'smaller-project-container' style={{backgroundColor: '#f8f8f8'}}> 
+                {/* <div className= 'section-title'> 
+                <span className= 'title-text'>Product Design</span>
+                </div> */}
+                <p className='container-title'>
+                    Creative Computing / Engineering
+                </p>
+                <div className= 'smaller-card-container'>
+                <Card className = 'card-item' title='Generative Art Simulator' content= 'React, ThreeJS, React-Three-Fiber' project={6}  link= 'https://gen-art-simulator.netlify.app/'></Card>
+                <Card className = 'card-item' title='Remind Bot' content= 'React, NodeJS, AWS SNS, Heroku' project={7} link= 'https://remindbot-app.herokuapp.com/'></Card>
+                <Card className = 'card-item' title='Generative Art: Untitled' content= 'ThreeJS, WebGL' project={4} link='https://github.com/dkkimdk/generative-art/blob/master/webgl.js' ></Card>
+                <Card className = 'card-item' title='Generative Art: Mind' content= 'ThreeJS, GLSL' project={5} link='https://github.com/dkkimdk/generative-art/blob/master/shader.js' ></Card>
                 </div>
             </div>
             <div className= 'bottom-footer'>

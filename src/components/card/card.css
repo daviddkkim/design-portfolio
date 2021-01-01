@@ -50,6 +50,38 @@
     width: auto;
     height: auto;
   }
+  .image-4{
+    background-image: url('../../assets/blocks.gif');
+    background-size: 100% 100%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+  }
+  .image-5{
+    background-image: url('../../assets/shader.gif');
+    background-size: 100% 100%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+  }
+  .image-6{
+    background-image: url('../../assets/genArt.png');
+    background-size: 100% 100%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+  }
+  .image-7{
+    background-image: url('../../assets/messenger.png');
+    background-size: 100% 100%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+  }
 
   .tag-line {
     margin-top: 16px;
