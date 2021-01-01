@@ -63,10 +63,10 @@ function Home() {
                     Creative Computing / Engineering
                 </p>
                 <div className= 'smaller-card-container'>
-                <Card className = 'card-item' title='Generative Art Simulator' content= 'React, ThreeJS, React-Three-Fiber' project={6}  link= 'https://gen-art-simulator.netlify.app/'></Card>
-                <Card className = 'card-item' title='Remind Bot' content= 'React, NodeJS, AWS SNS, Heroku' project={7} link= 'https://remindbot-app.herokuapp.com/'></Card>
-                <Card className = 'card-item' title='Generative Art: Untitled' content= 'ThreeJS, WebGL' project={4} link='https://github.com/dkkimdk/generative-art/blob/master/webgl.js' ></Card>
-                <Card className = 'card-item' title='Generative Art: Mind' content= 'ThreeJS, GLSL' project={5} link='https://github.com/dkkimdk/generative-art/blob/master/shader.js' ></Card>
+                <Card title='Generative Art Simulator' content= 'React, ThreeJS, React-Three-Fiber' project={6}  link= 'https://gen-art-simulator.netlify.app/'></Card>
+                <Card title='Remind Bot' content= 'React, NodeJS, AWS SNS, Heroku' project={7} link= 'https://remindbot-app.herokuapp.com/'></Card>
+                <Card title='Generative Art: Untitled' content= 'ThreeJS, WebGL' project={4} link='https://github.com/dkkimdk/generative-art/blob/master/webgl.js' ></Card>
+                <Card title='Generative Art: Mind' content= 'ThreeJS, GLSL' project={5} link='https://github.com/dkkimdk/generative-art/blob/master/shader.js' ></Card>
                 </div>
             </div>
             <div className= 'bottom-footer'>
