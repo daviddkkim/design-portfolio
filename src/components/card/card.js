@@ -9,6 +9,9 @@ function Card(props) {
         image = <div className= 'image-1'></div>
     } else if (props.project ===2 ){
         image= <div className= 'image-2'></div>
+    } else if (props.project ===3 ){
+        image= <div className= 'image-3'></div>
+
     }
 
     const link = props.link? props.link: props.title;

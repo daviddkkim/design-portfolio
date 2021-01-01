@@ -11,6 +11,8 @@ import trafficVid from '../assets/Check_Traffic.mp4'
 import {Link} from 'react-router-dom';
 import heroRestaurant from '../assets/restaurant-1-faster-min.jpeg'
 import breakImage from '../assets/secondPic.png'
+import SpringModal from '../components/modal/modal'
+
 
 function Resi() {
 
@@ -36,6 +38,7 @@ function Resi() {
                 To tackle this issue, I introduced a new reservation experience where customers can assess and choose their table at the time of reservation.            
                 </p>
             </section>
+            <SpringModal source= {reserveVid} color= {'white'}></SpringModal>
             <section className='project-role'>
                 <p className='project-role-title'><strong class='strong-white'>Role</strong>
                 <br></br>
@@ -165,10 +168,18 @@ function Resi() {
             <section className='project-content'>
                 <h5 className='project-content-title'>Reflection</h5>
                 <p className='project-hero-text'>
-                    Blalaalal <strong class='strong-purple'>blahlalaal</strong>
+                    Next Steps
                 </p>
                 <p className='project-content-text'>
-                Reflection content        
+                • I would like to explore a different way to display restaurant layout. Currently it is 2-dimensional and flat. I think there is an opportunity to make it more immersive by pursuing an alternative visualization.
+                <br/>
+                • I would need to explore a self-service capability for restaurants to upload their restaurant layout on the app. We wouldn't be able to effectively scale this product if we had to manually upload restaurant layout for each restaurants. 
+                </p>
+                <p className='project-hero-text'>
+                    Lessons Learned
+                </p>
+                <p className='project-content-text'>
+                • Context changes rapidly. Throughout this rather short project, the context and public view of COVID-19 rapidly changed. This further showed why it is extremely important for products to have a constant and fast feedback loop for product iterations.        
                 </p>
                 <Link className= 'link' to={'/'}>Back to main</Link>
             </section>

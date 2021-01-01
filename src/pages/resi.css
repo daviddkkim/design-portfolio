@@ -76,6 +76,8 @@
       margin-bottom: 0px;
       margin-top:0px;
       color:white;
+      line-height:150%;
+
   }
   
   .title-description {
@@ -191,7 +193,7 @@
     font-size:24px;
     font-weight:bold;
     margin-bottom:0px;
-    color:#cccccc;
+    color:#b6b6b6;
     line-height: 160%;
 
 }

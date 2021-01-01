@@ -23,12 +23,14 @@
 .intro-hero {
     font-weight: 600;
     font-size: 32px;
+    font-weight: bold;
 }
 
 .intro-body {
-    font-size: 24px;
+    font-size: 32px;
     font-family:  'Roboto';
-    font-weight: 400;
+    font-weight: bold;
+    color: #b1b1b1;
 }
 
 .canvas-block {
@@ -50,13 +52,13 @@
 
 
 .card-container {
-    min-height: 100vh;
+    min-height: 115vh;
     display:grid;  
-    grid-template-rows: auto auto;
+    grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
-    column-gap:90px;
-    max-width:1080px;
-    width: 83.333%;
+    column-gap:80px;
+    row-gap: 80px;
+    max-width:1200px;
     margin-left:auto;
     margin-right:auto;
 }
