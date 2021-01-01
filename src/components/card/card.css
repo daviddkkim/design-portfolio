@@ -9,6 +9,7 @@
     border-radius: 10px;
     display: grid;
     grid-template-rows: 80% 20%;
+    min-width: 100%;
   }
   
   /* On mouse-over, add a deeper shadow */
@@ -101,4 +102,5 @@
     font-size: 20px;
     line-height: 26px;
     color:#858585;
+    min-width: 100%;
   }

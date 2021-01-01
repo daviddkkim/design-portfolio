@@ -8,7 +8,7 @@ import loadingVid2 from '../assets/Loading_Second.mp4'
 import chatVid from '../assets/Chat_Feature_cut.mp4'
 import reserveVid from '../assets/Reserve.mp4'
 import trafficVid from '../assets/Check_Traffic.mp4'
-import {Link} from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import heroRestaurant from '../assets/restaurant-1-faster-min.jpeg'
 import breakImage from '../assets/secondPic.png'
 import SpringModal from '../components/modal/modal'
@@ -181,8 +181,8 @@ function Resi() {
                 <p className='project-content-text'>
                 • Context changes rapidly. Throughout this rather short project, the context and public view of COVID-19 rapidly changed. This further showed why it is extremely important for products to have a constant and fast feedback loop for product iterations.        
                 </p>
-                <Link className= 'link' to={'/'}>Back to main</Link>
             </section>
+            <HashLink className= 'link' to={'/#work'}>View other work</HashLink>
             </div>
         </div>
     </div>

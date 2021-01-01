@@ -4,7 +4,7 @@ import research1 from '../assets/Deep-research3.png'
 import research2 from '../assets/Deep-research2.png'
 import research3 from '../assets/Deep-research1.png'
 import reserveVid from '../assets/DeephireRun.mp4'
-import {Link} from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import deephireHero from '../assets/Deephire-hero.jpg'
 import breakImage from '../assets/MoneyShotDeep.png'
 import breakImage2 from '../assets/Deephire-break.png'
@@ -118,7 +118,9 @@ function Deephire() {
                 </div>
                 <p className={[styles.projectContentText,styles.marginMedium].join(' ')}>
                     <strong>Option A: Built-in mandatory instructional video</strong>
-                </p>
+                    {/* <br/>
+                    <a className={styles.projectContentText} style={{color:'#858585', textDecoration:'underline'}} href="https://optimistic-ramanujan-7d6e27.netlify.app/"> link to prototype</a>
+                 */}</p>
                 <div className={styles.featureSection}>
                     <div className={styles.iframeContainer}>
                         <iframe className={styles.iframeResponsive} src="https://optimistic-ramanujan-7d6e27.netlify.app/" frameborder="" title='1' />
@@ -142,7 +144,9 @@ function Deephire() {
                 </div>
                 <p className={[styles.projectContentText,styles.marginMedium].join(' ')}>
                 <strong>Option B: Cheat-sheet style infographics</strong>
-                </p>
+                {/* <br/>
+                <a className={styles.projectContentText} style={{color:'#858585', textDecoration:'underline'}} href="https://wizardly-noether-143579.netlify.app/"> link to prototype</a>
+                 */}</p>
                 <div className={styles.featureSection}>
                     <div className={styles.iframeContainer}>
                         <iframe className={styles.iframeResponsive} src="https://wizardly-noether-143579.netlify.app/" frameborder="" title='2'/>
@@ -207,8 +211,8 @@ function Deephire() {
                 <br/>
                 • Sometimes the intial problem space can take you to an underlying adjacent problem that needs to be addressed first.
                 </p>
-                <Link className= {styles.link} to={'/'}>Back to main</Link>
             </section>
+            <HashLink className= {styles.link} to={'/#work'}>View other work</HashLink>
             </div>
             </div>
         </div>

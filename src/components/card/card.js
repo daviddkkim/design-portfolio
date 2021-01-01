@@ -33,7 +33,6 @@ function Card(props) {
                     <span>{props.tagLine}</span>
                     <h2 className='title-line'>{props.title}</h2>
                     <span className='description-line'>{props.content}</span>
-                    <span className='description-line'>{props.secondContent? props.secondContent : null}</span>
                 </div>
                 </Link>
             </div>

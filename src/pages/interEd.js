@@ -12,7 +12,7 @@ import iteration1 from '../assets/iteration1-blurred.png'
 import iteration2 from '../assets/iteration2-blurred.png'
 import iteration3 from '../assets/iteration3-blurred.png'
 import iteration4 from '../assets/iteration4-blurred.png'
-import {Link} from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import deephireHero from '../assets/classroomCover.jpg'
 import breakImage from '../assets/interEd.png'
 import breakImage2 from '../assets/sketch.png'
@@ -270,8 +270,8 @@ function InterEd() {
                 <br/>
                 • Additional research and testing iterations to optimize the overall structure of the application.
                 </p>
-                <Link className= {styles.link} to={'/'}>Back to main</Link>
             </section>
+            <HashLink className= 'link' to={'/#work'}>View other work</HashLink>
             </div>
             </div>
         </div>

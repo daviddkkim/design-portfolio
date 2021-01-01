@@ -15,7 +15,6 @@ function App() {
           <Route path="/Resi" component= {Resi}  />
           <Route path="/Deephire" component= {Deephire}  />
           <Route path="/about" render = { () => (<div>about</div>)} />
-          <Route path="/work" render = { () => (<div>work</div>)} /> 
           <Route path="/*" component= {Home} />
  
         </Switch>
