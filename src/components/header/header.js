@@ -1,5 +1,6 @@
 import * as React from "react";
 import './header.css';
+import {ReactComponent as Logo} from '../../assets/logoSmall.svg';
 import {
     Link
   } from "react-router-dom"
@@ -18,7 +19,7 @@ function Header( props ) {
     
     return (
             <div className= "header" >
-                <Link to="/" className = "title" onClick = {() => onHeaderItem(props.title)}>{props.title}</Link>
+                <Link to="/" className = "title" onClick = {() => onHeaderItem(props.title)}><Logo className='hovering'></Logo></Link>
 
                 <div className = "navList">
                     <HashLink smooth to={"/#work"} className= "horizontal" key={'work'} onClick = {() => onHeaderItem('work')}> Work </HashLink>

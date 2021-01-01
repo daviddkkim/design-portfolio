@@ -5,7 +5,7 @@
 	justify-content: space-between;
     flex-wrap: wrap;
     position: relative;
-    height: 64px;
+    height: 100px;
     z-index: 3; 
 } 
 
@@ -35,6 +35,20 @@
     flex: 9 ;
     font-weight: 700;
 }
+
+.hovering:hover {
+    animation: roll 3s infinite;
+    transform: rotate(30deg);
+}
+
+@keyframes roll {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
 
 .navList {
     display:flex;
