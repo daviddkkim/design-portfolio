@@ -24,8 +24,8 @@ function Header( props ) {
                 <div className = "navList">
                     <HashLink smooth to={"/#work"} className= "horizontal" key={'work'} onClick = {() => onHeaderItem('work')}> Work </HashLink>
                     <HashLink smooth to={"/#explore"} className= "horizontal" key={'explore'} onClick = {() => onHeaderItem('explore')}> Explorations </HashLink>                                        
-{/*                     <HashLink to={"/About"} className= "horizontal" key={'about'} onClick = {() => onHeaderItem('about')}> About </HashLink>                    
- */}                </div>
+                     <HashLink to={"/About"} className= "horizontal" key={'about'} onClick = {() => onHeaderItem('about')}> About </HashLink>                    
+                 </div>
             </div>
     )
   }

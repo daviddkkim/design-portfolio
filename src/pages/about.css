@@ -1,0 +1,38 @@
+.about-container {
+    min-height: calc(100vh - 100px);
+        display: grid;
+        padding: 0px 136px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100%; 
+        column-gap: 100px;
+}
+
+.about-block{
+    color:white;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    box-sizing: border-box;
+}
+
+.about-hero {
+    font-weight: 600;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.about-regular {
+    font-size: 26px;
+    font-family:  'Roboto';
+    font-weight: bold;
+    color: #b1b1b1;
+    line-height: 150%;
+}
+
+.about-image {
+    width: 60%;
+    height: auto;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius: 100px;
+}

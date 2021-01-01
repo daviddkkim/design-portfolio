@@ -1,7 +1,7 @@
 
   .hero-image{
     min-width: 100%;
-    min-height: calc(100vh - 64px);
+    min-height: calc(100vh - 100px);
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -23,7 +23,7 @@
     margin-left:auto;
     margin-right:auto;
     z-index: 2;
-    min-height: calc(100vh - 64px);
+    min-height: calc(100vh - 100px);
     display:flex;
     flex-direction: column;
     justify-content: center;

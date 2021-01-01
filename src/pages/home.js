@@ -82,6 +82,10 @@ function Home() {
             </div>
             <div className= 'bottom-footer'>
             <span className='footer-message'>Made with &hearts; by David</span>
+            <div className='social-media'> 
+                <a className='social-media-link' href='https://www.linkedin.com/in/david-kim-b21156108/'>linkedin</a>
+                <a className='social-media-link' href='https://github.com/dkkimdk'>github</a>
+            </div>
             </div>
         
         </div>

@@ -5,6 +5,7 @@ import Deephire from './pages/deephire'
 import InterEd from './pages/interEd'
 import { Switch, Route} from 'react-router-dom'
 import Header from './components/header/header'
+import About from './pages/about'
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
           <Route path="/InterEd" component= {InterEd}  />
           <Route path="/Resi" component= {Resi}  />
           <Route path="/Deephire" component= {Deephire}  />
-          <Route path="/about" render = { () => (<div>about</div>)} />
+          <Route path="/about" component={About} />
           <Route path="/*" component= {Home} />
  
         </Switch>
