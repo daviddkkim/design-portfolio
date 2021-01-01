@@ -28,7 +28,7 @@
 
 .container-title {
     font-weight: 600;
-    font-size: 24px;
+    font-size: 32px;
     display: grid;
     max-width: 1200px;
     margin-left:auto;
@@ -60,7 +60,7 @@
 }
 .smaller-project-container {
     padding:40px 0px;
-    
+    padding-bottom: 80px;
 /*     grid-template-rows: 70px Auto; 
  */    
 

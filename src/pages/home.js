@@ -60,7 +60,7 @@ function Home() {
                 <span className= 'title-text'>Product Design</span>
                 </div> */}
                 <p className='container-title'>
-                    Creative Computing / Engineering
+                    Explorations / Creative Computing / Engineering
                 </p>
                 <div className= 'smaller-card-container'>
                     <div className='item-1'>
