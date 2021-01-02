@@ -38,3 +38,12 @@ button:hover {
     background-color: white;
     color: #8a85ff;
 }
+
+@media screen and (max-width: 1240px){
+    .canvas-layout {
+        display:flex;
+        flex-direction: column;
+        height: auto;
+        box-sizing: border-box;
+    }
+}
