@@ -72,7 +72,7 @@
 
 
 .card-container {
-    min-height: 115vh;
+    min-height: 1200px;
     display:grid;  
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
@@ -84,7 +84,7 @@
 }
 
 .smaller-card-container {
-    min-height: 115vh;
+    min-height: 1100px;
     display:grid;  
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
@@ -220,7 +220,7 @@
 
     }
     .card-container {
-        min-height: 150vh;
+        min-height: 1300px;
         display:grid;  
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-columns: 1fr;
@@ -232,7 +232,7 @@
     }
     
     .smaller-card-container {
-        min-height: 270vh;
+        min-height: 2350px;
         display:grid;  
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr;

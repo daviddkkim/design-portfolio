@@ -8,8 +8,9 @@
     transition: 0.3s;
     border-radius: 10px;
     display: grid;
-    grid-template-rows: 80% 20%;
+    grid-template-rows: 70% 30%;
     min-width: 100%;
+    
   }
   
   /* On mouse-over, add a deeper shadow */

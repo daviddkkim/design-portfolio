@@ -48,10 +48,10 @@ function Home() {
                 <span className= 'title-text'>Product Design</span>
                 </div> */}
                 <div className= 'card-container'>
-                <Card className = 'card-item' title='InterEd' content= 'Improving remote K-12 classroom interactions between teachers and students.' project={3} ></Card>
+                <Card className = 'card-item' title='InterEd' content= 'A solution for remote K-12 classrooms' project={3} ></Card>
 
-                    <Card  title='Resi' content= 'Design Challenge: Restaurant Reservation during COVID-19' project={1} ></Card>
-                    <Card className = 'card-item' title='Deephire' content= 'Designing an onboarding experience for a video-interview start-up' project={2} ></Card>
+                    <Card  title='Resi' content= 'Re-imagining restaurant reservation amid COVID-19' project={1} ></Card>
+                    <Card className = 'card-item' title='Deephire' content= 'New onboarding experience for a video-interview start-up' project={2} ></Card>
 
                 </div>
             </div>
