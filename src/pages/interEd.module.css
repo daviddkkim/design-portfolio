@@ -19,6 +19,7 @@
       max-height: 100vh;
       min-height: 100vh;
       opacity: 0.5;
+      object-fit: cover;
   }
   .heroImageTextContainer{
     max-width:800px;
@@ -289,6 +290,14 @@
 .responsiveImage{
   width:100%;
   height:auto;
+  object-fit: cover;
+
+}
+
+.responsiveHeightImage{
+  height:100%;
+  width:auto;
+  object-fit: cover;
 }
 .responsiveSmallImage{
   width:80%;
@@ -334,8 +343,9 @@
 .iterationImage{
   width:100%;
   height: auto;
-}
+  object-fit: cover;
 
+}
 
 
 @media screen and (min-width: 1280px) {

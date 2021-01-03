@@ -17,6 +17,8 @@
       max-height: 100vh;
       min-height: 100vh;
       opacity: 0.5;
+      object-fit: cover;
+
   }
   .hero-image-text-container{
     max-width:800px;
@@ -238,6 +240,8 @@
 .responsive-image{
   max-width:100%;
   height:auto;
+  object-fit: cover;
+
 }
 .set-image-container{
   margin-top:40px;
@@ -250,6 +254,8 @@
   max-width:100%;
   height:auto;
   margin-right:auto;
+  object-fit: cover;
+
 }
 
 @media screen and (min-width: 1280px) {

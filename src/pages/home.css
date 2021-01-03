@@ -77,7 +77,6 @@
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     column-gap:80px;
-    row-gap: 80px;
     max-width:1200px;
     margin-left:auto;
     margin-right:auto;
@@ -92,7 +91,6 @@
         "a b c"
         "d e f";
     column-gap:80px;
-    row-gap: 80px;
     max-width:1200px;
     margin-left:auto;
     margin-right:auto;

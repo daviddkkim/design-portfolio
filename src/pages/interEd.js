@@ -8,10 +8,10 @@ import FeatureHome from '../assets/ClassHome.png';
 import FeaturePlan from '../assets/PlanClass.png';
 import FeatureReview from '../assets/ReviewClass.png';
 import FeatureShare from '../assets/ShareClass.png';
-import iteration1 from '../assets/iteration1-blurred.png'
-import iteration2 from '../assets/iteration2-blurred.png'
-import iteration3 from '../assets/iteration3-blurred.png'
-import iteration4 from '../assets/iteration4-blurred.png'
+import iteration1 from '../assets/iteration1.png'
+import iteration2 from '../assets/iteration2.png'
+import iteration3 from '../assets/iteration3.png'
+import iteration4 from '../assets/iteration4.png'
 import { HashLink } from 'react-router-hash-link';
 import deephireHero from '../assets/classroomCover.jpg'
 import breakImage from '../assets/interEd.png'
