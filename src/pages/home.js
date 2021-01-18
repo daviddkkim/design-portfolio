@@ -60,14 +60,16 @@ function Home() {
                 <span className= 'title-text'>Product Design</span>
                 </div> */}
                 <p className='container-title'>
-                    Explorations / Creative Computing / Engineering
+                    Creative Computing
+                    <br/>
+                    <span className='container-title-description'> As a computer scientist in love with art, I like to explore ways for other traditionally "non-artsy" people to enjoy creating art.</span>
+                </p>
+                <p>
+                    
                 </p>
                 <div className= 'smaller-card-container'>
                     <div className='item-1'>
                         <Card  title='Generative Art Simulator' content= 'React, ThreeJS, React-Three-Fiber' project={6}  link= 'https://gen-art-simulator.netlify.app/' secondContent={['github repo','https://github.com/dkkimdk/Gen-art-simulator']}></Card>
-                    </div>
-                    <div className='item-2'>
-                    <Card title='Remind Bot' content= 'React, NodeJS, AWS SNS, Heroku' project={7} link= 'https://remindbot-app.herokuapp.com/'></Card>
                     </div>
                     <div className='item-3'>
                     <Card title='Generative Art: Untitled' content= 'ThreeJS, WebGL' project={4} link='https://github.com/dkkimdk/generative-art/blob/master/webgl.js' ></Card>
@@ -75,9 +77,33 @@ function Home() {
                     <div className='item-4'>
                     <Card title='Generative Art: Mind' content= 'ThreeJS, GLSL' project={5} link='https://github.com/dkkimdk/generative-art/blob/master/shader.js' ></Card>
                     </div>
-                    <div className='item-5'> 
-                    <a className='link' style={{color:'black'}} href="https://github.com/dkkimdk">View my git repo →</a>
+                </div>
+                <div className='link-container'>
+                <a className='link-git' style={{color:'black'}} href="https://github.com/dkkimdk">View my git repo →</a>
+                </div>
+            </div>
+            <div className= 'smaller-project-container' style={{backgroundColor: 'white'}} id='explore'> 
+                {/* <div className= 'section-title'> 
+                <span className= 'title-text'>Product Design</span>
+                </div> */}
+                <p className='container-title'>
+                    Weekend Tinkers
+                    <br/>
+                    <span className='container-title-description'> I love making things with code (often for no reason). Mostly in-progress.</span>
+                </p>
+                <p>
+                    
+                </p>
+                <div className= 'smaller-card-container'>
+                    <div className='item-1'>
+                        <Card title='Remind Bot' content= 'React, NodeJS, AWS SNS, Heroku' project={7} link= 'https://remindbot-app.herokuapp.com/'></Card>
                     </div>
+                    <div className='item-3'>
+                        <Card title='Purple Design System' content= 'React, Storybook' project={8} link='https://gallant-darwin-6c63cd.netlify.app/' ></Card>
+                    </div>
+                </div>
+                <div className='link-container'>
+                <a className='link-git' style={{color:'black'}} href="https://github.com/dkkimdk">View my git repo →</a>
                 </div>
             </div>
             <div className= 'bottom-footer'>

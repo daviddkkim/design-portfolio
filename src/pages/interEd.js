@@ -5,9 +5,9 @@ import videoImage from '../assets/Video.jpg';
 import classImage from '../assets/Class.jpg';
 import historyImage from '../assets/History.jpg'
 import FeatureHome from '../assets/ClassHome.png';
-import FeaturePlan from '../assets/PlanClass.png';
-import FeatureReview from '../assets/ReviewClass.png';
-import FeatureShare from '../assets/ShareClass.png';
+import FeatureReview from '../assets/Trimmed_Review_Class.mp4';
+import FeaturePlan from '../assets/Teacher-prep-class.mp4';
+import FeatureShare from '../assets/Trimmed_share_class.mp4';
 import iteration1 from '../assets/iteration1.png'
 import iteration2 from '../assets/iteration2.png'
 import iteration3 from '../assets/iteration3.png'
@@ -29,7 +29,7 @@ function InterEd() {
             <img src={deephireHero} className={styles.backgroundImage} alt='hero-image1'></img>
             <div className={styles.heroImageTextContainer}>
             <h5 className={styles.heroImageTextSmall}>New Product Design</h5>
-            <h4 className={styles.heroImageTextBig}> Designing to help k-12 classes adapt to remote learning</h4>
+            <h4 className={styles.heroImageTextBig}> Designing to reduce cognitive load for k-12 teachers in remote setting</h4>
             </div>
         </div>
 
@@ -48,7 +48,7 @@ function InterEd() {
             <section className={styles.projectRole}>
                 <p className={styles.projectRoleTitle}><strong class={styles.strongWhite}>Role</strong>
                 <br></br>
-                UX generalist
+                UX Design, Interaction Design, User Research
                 </p>
                 <p className={styles.projectRoleTitle}>
                 <strong class={styles.strongWhite}>Team</strong>
@@ -61,6 +61,7 @@ function InterEd() {
                 8 Weeks
                 </p>
             </section>
+            
         </div>
             <img src={breakImage} className={[styles.responsiveImage, styles.semiHeroImage].join(' ')} alt='break-image1'></img>
         <div className={[styles.contentWrapper, styles.marginWrapper].join(' ')}>
@@ -68,7 +69,7 @@ function InterEd() {
                 <h5 className={styles.projectContentTitle}>Research & Key Insights</h5>
                 <img src={research1} className={styles.responsiveImage} alt='research-image1'></img>
                 <p className={styles.projectHeroText}>
-                “ Transitioning my lessons to remote learning has <strong class={styles.strongPurple}>significantly increased my workload.”</strong>  - 3rd Grade Teacher
+                “ Transitioning to remote teaching <strong class={styles.strongPurple}>significantly increased my workload.”</strong>  - 3rd Grade Teacher
                 </p>
                 <p className={styles.projectContentText}>
                 • Teachers’ work and cognitive load increased significantly during remote lecturing due to simultaneous tasks, complexity of tools and environmental challenges.
@@ -88,11 +89,10 @@ function InterEd() {
             <section className={styles.projectContent}>
                 <h5 className={styles.projectContentTitle}>Framing the Problem</h5>
                 <p className={styles.projectHeroText}>
-                    How might we improve remote K-12<strong class={styles.strongPurple}> classroom interactions </strong>between <strong class={styles.strongBlue}>teachers and students?</strong>
+                    How might we <strong class={styles.strongPurple}>reduce the cognitive load of remote K-12 teaching </strong> so that we can improve classroom interactions?
                 </p>
                 <p className={styles.projectContentText}>
-               We initially thought of exploring the gap in communication between parents and teachers in remote education but our research showed that communication quality and frequency improved with remote education.
-               Upon learning that the classroom interactions have dropped in quality and efficiency due to things like increased cognitive load on teachers during class, we pivoted to looking at how we might improve classroom interactions.
+               We discovered that the classroom interactions have dropped in quality and efficiency due to increased cognitive load on teachers during class. Each task in the teaching journey required a different software, adding complexity to the teacher's job. 
                </p>
             </section>
         </div>
@@ -115,7 +115,7 @@ function InterEd() {
         <section className={styles.projectContent}>
                 <h5 className={styles.projectContentTitle}>Ideation</h5>
                 <p className={styles.projectHeroText}>
-                We hypothesized that a <strong class={styles.strongPurple}>digital education platform</strong> with the following features can help reduce cognitive load and thus, make classes more engaging:
+                We hypothesized that these features can <strong class={styles.strongPurple}> reduce cognitive load and improve engagement :</strong> 
                 </p>
                 <div className={styles.setImageContainer}>
                     <div>
@@ -215,22 +215,26 @@ function InterEd() {
                     </section>
                 </section>
                 <section className={styles.featureSection}>
-                    <img src={FeaturePlan} className={styles.featureVideo} alt='feature-2'/>
-                    <section className={styles.projectFeatureContent}>
+                    <video autoPlay loop muted  className={styles.featureVideo}>
+                        <source src={FeaturePlan} type='video/mp4'/>
+                    </video>                    <section className={styles.projectFeatureContent}>
                     <p className={styles.projectContentBigText}> <strong className={styles.strongWhite}>Customize interactive lesson plans </strong></p>
                     <p className={styles.projectContentText}> No need to use other tools to create engaging and interactive classroom activities.
                     Bring back the engaging interactive lessons to your remote classes.</p>
                     </section>
                 </section>
                 <section className={styles.featureSection}>
-                    <img src={FeatureShare} className={styles.featureVideo} alt='feature-3'/>
-                    <section className={styles.projectFeatureContent}>
+                    <video autoPlay loop muted  className={styles.featureVideo}>
+                        <source src={FeatureShare} type='video/mp4'/>
+                    </video>                    <section className={styles.projectFeatureContent}>
                     <p className={styles.projectContentBigText}> <strong className={styles.strongWhite}>Share and monitor your lesson plans and activities </strong></p>
                     <p className={styles.projectContentText}> Lesson plans are linked to the lecture and activities are easily shareable with the classroom.</p>
                     </section>
                 </section>
                 <section className={styles.featureSection}>
-                    <img src={FeatureReview} className={styles.featureVideo} alt='feature-4'/>
+                    <video autoPlay loop muted  className={styles.featureVideo}>
+                        <source src={FeatureReview} type='video/mp4'/>
+                    </video>
                     <section className={styles.projectFeatureContent}>
                     <p className={styles.projectContentBigText}> <strong className={styles.strongWhite}>Review events from past classes </strong></p>
                     <p className={styles.projectContentText}> Automate collection of important events from classes (polls, student questions, quizzes, ...etc) and review them to iterate on your class lectures.</p>

@@ -54,7 +54,7 @@
   }
   .image-4{
     background-image: url('../../assets/blocks.gif');
-    background-size: cover;
+    background-size: contain;
       min-width: 100%;
     min-height: 100%;
     width: auto;
@@ -62,7 +62,7 @@
   }
   .image-5{
     background-image: url('../../assets/shader.gif');
-    background-size: cover;
+    background-size: contain;
     min-width: 100%;
     min-height: 100%;
     width: auto;
@@ -70,7 +70,7 @@
   }
   .image-6{
     background-image: url('../../assets/genArts.png');
-    background-size: cover;
+    background-size: contain;
     min-width: 100%;
     min-height: 100%;
     width: auto;
@@ -78,6 +78,15 @@
   }
   .image-7{
     background-image: url('../../assets/remindBot.png');
+    background-size: cover;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+  }
+
+  .image-8{
+    background-image: url('../../assets/Colors.png');
     background-size: cover;
     min-width: 100%;
     min-height: 100%;

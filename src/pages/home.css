@@ -34,8 +34,15 @@
     margin-left:auto;
     margin-right: auto;
     margin-bottom: 80px;
+    line-height:150%;
 }
-
+.container-title-description {
+    font-weight: 400;
+    font-size: 22px;
+    display: grid;
+    max-width: 800px;
+    line-height: 26px;
+}
 .intro-body {
     font-size: 32px;
     font-family:  'Roboto';
@@ -66,6 +73,7 @@
 
     grid-template-rows:auto;
     background-color: white;
+    
 
    
 }
@@ -83,13 +91,13 @@
 }
 
 .smaller-card-container {
-    min-height: 1100px;
+    min-height: 550px;
     display:grid;  
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: 
-        "a b c"
-        "d e f";
+        "a e f"
+        "a e f";
     column-gap:80px;
     max-width:1200px;
     margin-left:auto;
@@ -139,7 +147,12 @@
     justify-content: center;
 }
 
-.link {
+.link-container{
+    display:flex;
+    justify-content: center;
+    padding-top:40px;
+}
+.link-git {
     font-size: 22px;
     text-decoration: underline;
 }
@@ -181,6 +194,10 @@
 .social-media-link {
     margin-left:20px;
     text-decoration: underline;
+}
+
+.background-color-white {
+    background-color:white;
 }
 
 @media screen and (max-width: 1240px){
@@ -230,13 +247,12 @@
     }
     
     .smaller-card-container {
-        min-height: 2350px;
+        min-height: 1800px;
         display:grid;  
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr ;
         grid-template-columns: 1fr;
         grid-template-areas: 
             "a"
-            "b"
             "e"
             "f"
             "c";
@@ -246,7 +262,6 @@
 
         
     }
-
     .project-container {
         padding:100px 40px;
         
@@ -273,7 +288,7 @@
 
 @media screen and (max-width: 500px){
     .card-container {
-        min-height: 150vh;
+        min-height: 130vh;
         display:grid;  
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-columns: 1fr;
@@ -285,13 +300,12 @@
     }
     
     .smaller-card-container {
-        min-height: 200vh;
+        min-height: 150vh;
         display:grid;  
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr ;
         grid-template-columns: 1fr;
         grid-template-areas: 
             "a"
-            "b"
             "e"
             "f"
             "c";

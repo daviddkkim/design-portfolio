@@ -20,6 +20,8 @@ function Card(props) {
         image= <div className= 'image-6'></div>
     } else if (props.project ===7 ){
         image= <div className= 'image-7'></div>
+    } else if (props.project ===8 ){
+        image= <div className= 'image-8'></div>
     }
 
     const link = props.link? props.link: props.title;
