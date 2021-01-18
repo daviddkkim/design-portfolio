@@ -3,6 +3,8 @@ import './home.css';
 import Boxes from '../components/box'
 import Card from '../components/card/card'
 import MouseTooltip from 'react-sticky-mouse-tooltip';
+import {Link} from 'react-router-dom';
+
 
 
 
@@ -34,7 +36,8 @@ function Home() {
                     During the day, I'm a <strong className= 'strong-white'>software-engineer-turned-product-manager</strong> building a conversational AI platform at Capital One. 
                     <br></br>
                     </p>
-                    
+                    <Link to='/about' className='link-more'> More about me</Link>
+
                 </div>
                 <div className= "canvas-block" 
                 onMouseEnter={() => setHover(true)}
