@@ -148,9 +148,7 @@ function InterEd() {
             <section className={styles.projectContent}>
                 <h5 className={styles.projectContentTitle}>Usability Testing and Design Iterations</h5>
                 <p className={[styles.projectContentText,styles.marginMedium].join(' ')}>
-                   We conducted remote usability tests with teachers and students. 
-                   <br/>
-                   These were the key findings:
+                   These were our key findings from usability tests with teachers and students:
                     <p className={[styles.projectContentText,styles.indent].join(' ')}>
                     • Teachers found the interaction for sharing content to students confusing.  
                     <br/>
@@ -160,34 +158,34 @@ function InterEd() {
                     </p>
                 </p>
                 <p className={[styles.projectContentText,styles.marginMedium].join(' ')}>
-                   Based on the findings, we iterated on our design while focusing on simplifying the interface and reducing cognitive load:
+                   Based on the above findings, we executed the following design iterations:
                    <br/>
                 </p>
                 <div className={styles.iterationSection}>
                 <section>
                     <img src={iteration1} className={styles.iterationImage} alt='feature-1'/>
-                    <section className={styles.projectFeatureContent}>
+                    <section className={styles.projectIterationContent}>
                     <p className={styles.projectContentText}> <strong className={styles.strongWhite}>More expressive hierarchy </strong></p>
-                    <p className={styles.projectContentText}> We made hierarchy more expressive in our platform. We especially paid attention to it in the class planning page by using nested-tabs rather than breadcrumbs.</p>
+                    <p className={styles.projectContentText}> We made hierarchy more expressive in our platform. We paid attention to this in the class planning page by using nested-tabs rather than breadcrumbs.</p>
                     </section>
                 </section>
                 <section >
                     <img src={iteration2} className={styles.iterationImage} alt='feature-2'/>
-                    <section className={styles.projectFeatureContent}>
+                    <section className={styles.projectIterationContent}>
                     <p className={styles.projectContentText}> <strong className={styles.strongWhite}>Better organiziation </strong></p>
-                    <p className={styles.projectContentText}> We re-organized components to be more self-explanatory in function by follwing the law of common region. We put extra attention into doing so for the activity builder tool by laying out the edit features in groups.</p>
+                    <p className={styles.projectContentText}> We re-organized components to be more self-explanatory in function by follwing the law of common region. For example, the edit feature in the activity builder tool was re-organized.</p>
                     </section>
                 </section>
                 <section >
                     <img src={iteration3} className={styles.iterationImage} alt='feature-3'/>
-                    <section className={styles.projectFeatureContent}>
+                    <section className={styles.projectIterationContent}>
                     <p className={styles.projectContentText}> <strong className={styles.strongWhite}>Clear visibility </strong></p>
                     <p className={styles.projectContentText}> We enhanced visibility of the important compnents. This can be seen in how we added more contrast and icons for the class activity sharing panel.</p>
                     </section>
                 </section>
                 <section >
                     <img src={iteration4} className={styles.iterationImage} alt='feature-4'/>
-                    <section className={styles.projectFeatureContent}>
+                    <section className={styles.projectIterationContent}>
                     <p className={styles.projectContentText}> <strong className={styles.strongWhite}>Simplified interface </strong></p>
                     <p className={styles.projectContentText}> We simplified the interface all around. We especially paid attention to untangling the student interface by removing unnecessarily nested items.</p>
                     </section>

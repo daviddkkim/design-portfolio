@@ -242,6 +242,12 @@
   max-width:500px;
 }
 
+.projectIterationContent{
+  margin-top:auto;
+  margin-bottom: auto;
+  max-width:950px;
+}
+
 .backgroundChange {
   background-color: #f8f8f8;
 }
@@ -293,6 +299,7 @@
   object-fit: cover;
 
 }
+
 
 .responsiveHeightImage{
   height:100%;
@@ -393,11 +400,11 @@
   }
   .iterationSection{
     display:grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     column-gap: 60px;
     row-gap: 60px;
     margin-bottom:100px;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
 
   }
   .iterationImage{
