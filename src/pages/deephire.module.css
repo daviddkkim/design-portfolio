@@ -214,7 +214,12 @@
   margin-bottom: 100px;
 }
 
-
+.codeLink {
+  color: #858585;
+  font-size: 20px;
+  text-decoration: underline;
+  padding-top: 32px;
+}
 .projectFeatureContent{
   margin-top:auto;
   margin-bottom: auto;
@@ -231,9 +236,10 @@
 }
 
 .iframeResponsive{
-  height:100%;
   width: 100%;
-  
+  box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.05), 
+    0 8px 8px 8px rgba(0,0,0,0.25);
+  margin-bottom: 16px;
 }
 
 .indent {
@@ -332,8 +338,7 @@
   }
 
   .iframeResponsive{
-    height:100%;
-    width: 100%;
+    max-height:380px;
     box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.05), 
       0 8px 8px 8px rgba(0,0,0,0.25);
   }

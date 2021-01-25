@@ -9,6 +9,8 @@ import deephireHero from '../assets/Deephire-hero.jpg'
 import breakImage from '../assets/MoneyShotDeep.png'
 import breakImage2 from '../assets/Deephire-break.png'
 import SpringModal from '../components/modal/modal'
+import cheatSheet from '../assets/cheatSheetInstruction.png'
+import videoInstruction from '../assets/videoInstruction.png'
 
 function Deephire() {
 
@@ -123,8 +125,10 @@ function Deephire() {
                  */}</p>
                 <div className={styles.featureSection}>
                     <div className={styles.iframeContainer}>
-                        <iframe className={styles.iframeResponsive} src="https://optimistic-ramanujan-7d6e27.netlify.app/" frameborder="" title='1' />
-                    <p>* You can interact with this coded Framer prototype</p>
+{/*                         <iframe className={styles.iframeResponsive} src="https://optimistic-ramanujan-7d6e27.netlify.app/" frameborder="" title='1' />
+ */}                    
+                        <img src={videoInstruction} className={styles.iframeResponsive} alt='option-image1'></img>
+                        <a  className={styles.codeLink} href='https://optimistic-ramanujan-7d6e27.netlify.app/'>Link to coded prototype</a>
                     </div>
                     <div >
                         <span className={styles.projectContentText}> This option uses instructional videos to onboard candidates.</span>
@@ -149,8 +153,10 @@ function Deephire() {
                  */}</p>
                 <div className={styles.featureSection}>
                     <div className={styles.iframeContainer}>
-                        <iframe className={styles.iframeResponsive} src="https://wizardly-noether-143579.netlify.app/" frameborder="" title='2'/>
-                    <p>* You can interact with this coded Framer prototype</p>
+{/*                         <iframe className={styles.iframeResponsive} src="https://wizardly-noether-143579.netlify.app/" frameborder="" title='2'/>
+ */}                    
+                         <img src={cheatSheet} className={styles.iframeResponsive} alt='option-image2'></img>
+                        <a className={styles.codeLink} href='https://wizardly-noether-143579.netlify.app/'>Link to coded prototype</a>
                     </div>
                     <div >
                         <span className={styles.projectContentText}> This option uses a cheat-sheet style infograph to onboard customers.</span>

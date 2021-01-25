@@ -102,7 +102,7 @@ function Resi() {
             <section className='project-content'>
                 <h5 className='project-content-title'>Ideation</h5>
                 <p className='project-content-text'>
-                    When looking at the question, "How might we help covid-concious customers feel ensured that their reserved dining experience will match their COVID-19 preferences?", the main pain points were centered around the uncertainty customers felt when thinking about going back to restaurants. Here are the highlighted ideas that I brainstormed.
+                    The main pain points were centered around the uncertainty customers felt when thinking about going back to restaurants. Here are the highlighted ideas that I brainstormed.
                 </p>
                 <p className='project-content-big-text'>
                 <strong className='strong-white'>
@@ -110,7 +110,7 @@ function Resi() {
                 </strong>
                 </p>
                 <p className='project-content-text'>
-                Questions like "how close would I be to other customers?" and "how crowded would the restaurants be?" sat atop customer's minds. I hypothesized that a visual representation of the restaurant layout and the ability to reserve a specific table would empower the customer to be confident in making the reservation.
+                "Uncertainty" was the common theme of what stopped customers. I hypothesized that giving a visual representaton and a choice of table would help customers come around.
                 </p>
                 <p className='project-content-big-text'>
                 <strong class='strong-white'>
@@ -118,7 +118,7 @@ function Resi() {
                 </strong>
                 </p>
                 <p className='project-content-text'>
-                Guidelines on COVID-19 are rapidly changing. Restaurants are not providing customers with the right information on how they are tackling them. Having to call restaurnats added unecessary friction. I hypothesized that a chat feature to communicate seemlessly with restaurnats will drive up customer's confidence.
+                Guidelines on COVID-19 are evolving and customers don't know how restaurants are adapting. A chat feature to directly communicate with restaurants might resolve that.
                 </p>
                 <p className='project-content-big-text'>
                 <strong className='strong-white'>
@@ -126,7 +126,7 @@ function Resi() {
                 </strong>
                 </p>
                 <p className='project-content-text'>
-                Things can change from the moment the customers make the reservation and until they have to show up. I hypothesized that giving customers a way to keep up-to-date with the restaurant traffic will help customers make the reservation and ultimately have a better dining experience.
+                Things can change from the moment the customers make the reservation and until they show up. Customers are more wary than ever. A way to keep up-to-date with the restaurant could instill confidence.
                 </p>
             </section>
             <section className='project-content'>
@@ -143,7 +143,7 @@ function Resi() {
                     </video>
                     <section className='project-feature-content'>
                     <p className="project-feature-big-text"> <strong className="strong-purple">Assess</strong> <strong className="strong-white"> the restaurant layout and <br/><strong className="strong-purple">Choose</strong> your table </strong></p>
-                    <p className="project-content-text"> Have any questions? Chat with restaurants and square away any doubts you might have about what the restaurants are doing to provide a sanitary and safe environment.</p>
+                    <p className="project-content-text"> Uncertain about what it will be like? Look at the layout and pick your own table as well. Picture yourself here before you reserve.</p>
                     </section>
                 </section>
                 <section className="feature-section">
