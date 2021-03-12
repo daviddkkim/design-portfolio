@@ -101,9 +101,6 @@ function Home() {
                     <div className='item-1'>
                         <Card title='Remind Bot' content= 'React, NodeJS, AWS SNS, Heroku' project={7} link= 'https://remindbot-app.herokuapp.com/'></Card>
                     </div>
-                    <div className='item-3'>
-                        <Card title='Purple Design System' content= 'React, Storybook' project={8} link='https://gallant-darwin-6c63cd.netlify.app/' ></Card>
-                    </div>
                 </div>
                 <div className='link-container'>
                 <a className='link-git' style={{color:'black'}} href="https://github.com/dkkimdk">View my git repo →</a>
